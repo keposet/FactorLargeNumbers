@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class ArrayBuilder {
 
-
     private ArrayList<Integer> primeList = new ArrayList<Integer>();
-    private final int LIMIT = 100000;
+    private final int LIMIT = 10000;
+
 
     public ArrayList<Integer> findPrimes() {
         int i = 0, limit = LIMIT, testValue = 2;
@@ -36,9 +36,7 @@ public class ArrayBuilder {
             }
 
         }
-return primeList;
+        return primeList;
     }
 
 }
-
-
