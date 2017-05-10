@@ -8,7 +8,7 @@ public class ArrayBuilder {
     private final int LIMIT = 10000;
 
 
-    public ArrayList<Integer> findPrimes() {
+    public void findPrimes() {
         int i = 0, limit = LIMIT, testValue = 2;
         boolean isPrime = true;
 
@@ -36,7 +36,14 @@ public class ArrayBuilder {
             }
 
         }
-        return primeList;
+    }
+
+    public void printList(){
+
+        for (Integer prime : primeList) {
+            System.out.println(prime);
+        }
+
     }
 
 }
